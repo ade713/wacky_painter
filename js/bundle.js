@@ -154,7 +154,10 @@ View.prototype.exercise5 = function () {
   //hint: checkout the addRow function at the bottom of the file: we set the
   //  'data-pos' of every square
 
-  //your code here!
+  $(".square").on("click", square => {
+    const $box = $(square.currentTarget);
+    alert($box.attr("data-pos"));
+  });
 };
 
 View.prototype.exercise6 = function () {

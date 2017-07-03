@@ -137,6 +137,13 @@ View.prototype.exercise4 = function () {
   //Result: Your name appears in every other square.
 
   //your code here!
+  let $squares = $("li");
+
+  $squares.each((index, square) => {
+    if (index%2 === 0) {
+      $(square).text("Ade");
+    }
+  });
 };
 
 View.prototype.exercise5 = function () {
